@@ -7,7 +7,7 @@
 :MainMenu
 
 cls
-title  Compilation %blank%Activation %blank%Scripts %masver%
+title  Compilation %blank%OpenSource %blank%Scripts %masver%
 if not defined terminal mode 76, 13
 
 
