@@ -2,16 +2,6 @@
 @setlocal DisableDelayedExpansion
 @echo off
 
-
-:: Check if the script is running as administrator
-net session >nul 2>&1
-if %errorLevel% neq 0 (
-    echo This script requires administrative privileges.
-    exit /b
-)
-
-:: Your script commands go here
-echo Running with administrative privileges...
 ::========================================================================================================================================
 
 :MainMenu
