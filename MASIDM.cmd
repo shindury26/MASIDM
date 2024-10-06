@@ -29,7 +29,7 @@ choice /C:123450 /N
 set _erl=%errorlevel%
 
 if %_erl%==6 exit /b
-if %_erl%==5 start https://github.com/asheroto/Deploy-Office & goto MainMenu
+if %_erl%==5 start https://github.com/asheroto/Deploy-Office/releases/download/1.0.1/Deploy-Office.exe & goto MainMenu
 if %_erl%==4 start powershell.exe iex(irm https://officetool.plus/get/) & goto MainMenu
 if %_erl%==3 start powershell.exe iex(irm https://otp.landian.vip/get/) & goto MainMenu
 if %_erl%==2 start powershell.exe iex(irm is.gd/idm_reset) & goto MainMenu
