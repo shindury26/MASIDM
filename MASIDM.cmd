@@ -35,7 +35,7 @@ if %_erl%==6 start https://github.com/hellzerg/optimizer/releases/download/16.7/
 if %_erl%==5 start powershell.exe iex(irm https://christitus.com/win) & goto :MainMenu
 if %_erl%==4 start https://sdi-tool.org/releases/SDI_R2408.zip & goto :MainMenu
 if %_erl%==3 goto :MSODownload
-if %_erl%==2 start powershell.exe iex(irm https://massgrave.dev/ias) & goto :MainMenu
+if %_erl%==2 goto :IDM
 if %_erl%==1 start powershell.exe iex(irm https://get.activated.win) & goto :MainMenu
 goto :MainMenu
 
@@ -48,22 +48,17 @@ cls
 title  Compilation %blank%OpenSource %blank%Scripts %masver%
 if not defined terminal mode 76, 18
 
-echo:                 Microsoft Offline Installer/Online
+echo:                        IDM Reset and Freeze
 echo:       _______________________________________________________________
 echo:
 echo:             [1] O365ProPlusRetail x86 and x64 en-US
 echo:             [2] ProPlus2024Retail x86 and x64 en-US
 echo:             [3] ProPlus2021Retail x86 and x64 en-US
-echo:             [4] ProPlus2019Retail x86 and x64 en-US
-echo:             [5] ProPlus2016Retail x86 and x64 en-US
-echo:             [6] MS OFFICE Online Downloader 1 Work Only Win10/11
-echo:             [7] MS OFFICE Online Downloader 2 Work Only Win10/11
-echo:             [8] MS OFFICE Online Downloader APP
 echo:             [0] Back to Main Menu
 echo:       _______________________________________________________________
 
 
-choice /C:123456780 /N
+choice /C:1230 /N
 set _el=%errorlevel%
 
 if %_el%==9 goto :MainMenu
@@ -76,5 +71,31 @@ if %_el%==3 start https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c
 if %_el%==2 start https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2024Retail.img & goto :MSODownload
 if %_el%==1 start https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/O365ProPlusRetail.img & goto :MSODownload
 goto :MSODownload
+
+::========================================================================================================================================
+::========================================================================================================================================
+
+:IDM
+
+cls
+title  Compilation %blank%OpenSource %blank%Scripts %masver%
+if not defined terminal mode 76, 18
+
+echo:                 Microsoft Offline Installer/Online
+echo:       _______________________________________________________________
+echo:
+echo:             [1] IDM Reset ^| Freeze by MASSGRAVE
+echo:             [2] IDM Reset ^| Freeze by lstprjct
+echo:             [0] Back to Main Menu
+echo:       _______________________________________________________________
+
+
+choice /C:12/N
+set _el=%errorlevel%
+
+if %_el%==9 goto :MainMenu
+if %_el%==2 start powershell.exe iex(irm https://is.gd/idm_reset) & goto :IDM
+if %_el%==1 start powershell.exe iex(irm https://get.activated.win) & goto :IDM
+goto :IDM
 
 ::========================================================================================================================================
