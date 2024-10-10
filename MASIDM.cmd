@@ -53,11 +53,11 @@ if not defined terminal mode 76, 18
 echo:                 Microsoft Offline Installer IMG
 echo:       _______________________________________________________________
 echo:
-echo:             [1] O365ProPlusRetail x86 and x64
-echo:             [2] ProPlus2024Retail x86 and x64
-echo:             [3] ProPlus2021Retail x86 and x64
-echo:             [4] ProPlus2019Retail x86 and x64
-echo:             [5] ProPlus2016Retail x86 and x64
+echo:             [1] O365ProPlusRetail x86 and x64 en-US
+echo:             [2] ProPlus2024Retail x86 and x64 en-US
+echo:             [3] ProPlus2021Retail x86 and x64 en-US
+echo:             [4] ProPlus2019Retail x86 and x64 en-US
+echo:             [5] ProPlus2016Retail x86 and x64 en-US
 echo:             [0] Back to Main Menu
 echo:       _______________________________________________________________
 
