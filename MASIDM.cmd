@@ -98,7 +98,7 @@ set _el=%errorlevel%
 
 if %_el%==3 goto :MainMenu
 if %_el%==2 start powershell.exe iex(irm https://is.gd/idm_reset) & goto :IDM
-if %_el%==1 start powershell.exe iex(irm https://get.activated.win) & goto :IDM
+if %_el%==1 start powershell.exe iex(irm https://massgrave.dev/ias) & goto :IDM
 goto :IDM
 
 ::========================================================================================================================================
