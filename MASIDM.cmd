@@ -48,17 +48,22 @@ cls
 title  Compilation %blank%OpenSource %blank%Scripts %masver%
 if not defined terminal mode 76, 18
 
-echo:                        IDM Reset and Freeze
+echo:                 Microsoft Offline Installer/Online
 echo:       _______________________________________________________________
 echo:
 echo:             [1] O365ProPlusRetail x86 and x64 en-US
 echo:             [2] ProPlus2024Retail x86 and x64 en-US
 echo:             [3] ProPlus2021Retail x86 and x64 en-US
+echo:             [4] ProPlus2019Retail x86 and x64 en-US
+echo:             [5] ProPlus2016Retail x86 and x64 en-US
+echo:             [6] MS OFFICE Online Downloader 1 Work Only Win10/11
+echo:             [7] MS OFFICE Online Downloader 2 Work Only Win10/11
+echo:             [8] MS OFFICE Online Downloader APP
 echo:             [0] Back to Main Menu
 echo:       _______________________________________________________________
 
 
-choice /C:1230 /N
+choice /C:123456780 /N
 set _el=%errorlevel%
 
 if %_el%==9 goto :MainMenu
@@ -73,8 +78,6 @@ if %_el%==1 start https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c
 goto :MSODownload
 
 ::========================================================================================================================================
-::========================================================================================================================================
-
 :IDM
 
 cls
@@ -90,10 +93,10 @@ echo:             [0] Back to Main Menu
 echo:       _______________________________________________________________
 
 
-choice /C:12/N
+choice /C:120 /N
 set _el=%errorlevel%
 
-if %_el%==9 goto :MainMenu
+if %_el%==3 goto :MainMenu
 if %_el%==2 start powershell.exe iex(irm https://is.gd/idm_reset) & goto :IDM
 if %_el%==1 start powershell.exe iex(irm https://get.activated.win) & goto :IDM
 goto :IDM
