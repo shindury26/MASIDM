@@ -25,6 +25,7 @@ echo:
 echo:      Create By: shindury26
 echo:      Credit to the developers of Opensource program/ Script
 echo:      MASSGRAVE ^| hellzerg ^| YerongAI ^| asheroto ^| Chris Titus
+echo:      lstprjct  ^|
 
 
 choice /C:1234560 /N
@@ -88,7 +89,7 @@ echo:                 IDM TRIAL RESET AND FREEZE
 echo:       _______________________________________________________________
 echo:
 echo:             [1] IDM Reset ^| Freeze by MASSGRAVE
-echo:             [2] IDM Reset ^| Freeze by lstprjct
+echo:             [2] IDM Reset ^| Freeze Modded by lstprjct
 echo:             [0] Back to Main Menu
 echo:       _______________________________________________________________
 
