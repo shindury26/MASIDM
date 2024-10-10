@@ -46,7 +46,7 @@ goto :MainMenu
 :MSODownload
 
 cls
-title  Compilation %blank%OpenSource %blank%Scripts %masver%
+title  Compilation %blank%OpenSource %blank%Scripts %CAS%
 if not defined terminal mode 76, 18
 
 echo:                 Microsoft Offline Installer/Online
@@ -82,7 +82,7 @@ goto :MSODownload
 :IDM
 
 cls
-title  Compilation %blank%OpenSource %blank%Scripts %masver%
+title  Compilation %blank%OpenSource %blank%Scripts %CAS%
 if not defined terminal mode 76, 18
 
 echo:                 IDM TRIAL RESET AND FREEZE
