@@ -16,7 +16,7 @@ echo:
 echo:             [1] Windows and Office Activation
 echo:             [2] Internet Download Manager Reset ^| Freeze
 echo:             [3] Download Microsoft Office Online/Offline
-echo:             [4] Snappy Driver Lite 
+echo:             [4] Snappy Driver Lite App
 echo:             [5] Chris Titus Tech's Windows Utility Work Only Win10/11
 echo:             [6] Optimizer Work Only Win10/11
 echo:             [0] Exit
