@@ -33,7 +33,7 @@ if %_erl%==6 exit /b
 if %_erl%==5 start https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe & goto MainMenu
 if %_erl%==4 start powershell.exe iex(irm https://christitus.com/win) & goto MainMenu
 if %_erl%==3 goto :MSODownload
-if %_erl%==2 start powershell.exe iex(irm is.gd/idm_reset) & goto MainMenu
+if %_erl%==2 start powershell.exe iex(irm https://massgrave.dev/ias) & goto MainMenu
 if %_erl%==1 start powershell.exe iex(irm https://get.activated.win) & goto MainMenu
 goto :MainMenu
 
