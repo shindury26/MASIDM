@@ -84,7 +84,7 @@ cls
 title  Compilation %blank%OpenSource %blank%Scripts %masver%
 if not defined terminal mode 76, 18
 
-echo:                 Microsoft Offline Installer/Online
+echo:                 IDM TRIAL RESET AND FREEZE
 echo:       _______________________________________________________________
 echo:
 echo:             [1] IDM Reset ^| Freeze by MASSGRAVE
