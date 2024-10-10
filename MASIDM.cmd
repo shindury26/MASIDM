@@ -16,8 +16,9 @@ echo:
 echo:             [1] Windows and Office Activation
 echo:             [2] Internet Download Manager Reset ^| Freeze
 echo:             [3] Download Microsoft Office Online/Offline
-echo:             [4] Chris Titus Tech's Windows Utility Work Only Win10/11
-echo:             [5] Optimizer Work Only Win10/11
+echo:             [4] Snappy Driver Lite 
+echo:             [5] Chris Titus Tech's Windows Utility Work Only Win10/11
+echo:             [6] Optimizer Work Only Win10/11
 echo:             [0] Exit
 echo:       _______________________________________________________________
 echo:
@@ -26,15 +27,16 @@ echo:      Credit to the developers of Opensource program/ Script
 echo:      MASSGRAVE ^| hellzerg ^| YerongAI ^| asheroto ^| Chris Titus
 
 
-choice /C:123450 /N
+choice /C:1234560 /N
 set _erl=%errorlevel%
 
-if %_erl%==6 exit /b
-if %_erl%==5 start https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe & goto MainMenu
-if %_erl%==4 start powershell.exe iex(irm https://christitus.com/win) & goto MainMenu
+if %_erl%==7 exit /b
+if %_erl%==6 start https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe & goto :MainMenu
+if %_erl%==5 start powershell.exe iex(irm https://christitus.com/win) & goto :MainMenu
+if %_erl%==4 start https://sdi-tool.org/releases/SDI_R2408.zip & goto :MainMenu
 if %_erl%==3 goto :MSODownload
-if %_erl%==2 start powershell.exe iex(irm https://massgrave.dev/ias) & goto MainMenu
-if %_erl%==1 start powershell.exe iex(irm https://get.activated.win) & goto MainMenu
+if %_erl%==2 start powershell.exe iex(irm https://massgrave.dev/ias) & goto :MainMenu
+if %_erl%==1 start powershell.exe iex(irm https://get.activated.win) & goto :MainMenu
 goto :MainMenu
 
 ::========================================================================================================================================
